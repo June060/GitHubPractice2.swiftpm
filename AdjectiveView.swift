@@ -13,7 +13,7 @@ struct AdjectiveView: View {
     var body: some View {
         NavigationView {
             TextField("Add An Adjective", text: $object.adjective)
-            NavigationLink("Go to Summary View", destination: SummaryView(object: $object))
+            NavigationLink("Go to Summary View", destination: SummaryView(object: object))
         }
     }
 }
