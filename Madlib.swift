@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct Madlib{
-    @State var noun = ""
-    @State var verb = ""
-    @State var adjective = ""
+    @State var noun:String
+    @State var verb:String
+    @State var adjective:String
 }
