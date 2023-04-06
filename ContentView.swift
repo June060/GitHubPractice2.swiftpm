@@ -1,16 +1,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var madLib1: Madlib = Madlib(noun: "", verb: "", adjective: "")
     var body: some View {
         NavigationView{
-            NavigationLink {
-                NounView(madLib: madLib1)
-            } label: {
-                Text("Make your madlib")
-            }
-
+            NavigationLink("Make your madlib", destination: NounView())
         }
-        
     }
 }
