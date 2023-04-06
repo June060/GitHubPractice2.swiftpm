@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct NounView: View {
-    @State var madLib: Madlib
+    @State var madLib: Madlib = Madlib(noun: "", verb: "", adjective: "")
     var body: some View {
         NavigationView {
             TextField("Noun", text: $madLib.noun)
