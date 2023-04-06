@@ -9,9 +9,11 @@ import Foundation
 import SwiftUI
 
 struct AdjectiveView: View {
+    @Binding var object:Madlib
     var body: some View {
         NavigationView {
-//            NavigationLink("Go to Summary View", destination: SummaryView())
+            TextField("Add An Adjective", text: $object.adjective)
+            NavigationLink("Go to Summary View", destination: SummaryView(object))
         }
     }
 }
