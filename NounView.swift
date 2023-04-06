@@ -13,7 +13,7 @@ struct NounView: View {
     var body: some View {
         NavigationView {
             TextField("Hello", text: $madLib.noun)
-            NavigationLink("Go to Verb View", destination: VerbView(madLib))
+            NavigationLink("Go to Verb View", destination: VerbView(madLib: $madLib))
         }
     }
 }
