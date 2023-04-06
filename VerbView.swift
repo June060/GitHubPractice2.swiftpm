@@ -6,7 +6,7 @@ struct VerbView: View {
         NavigationView {
             TextField("Enter a verb", text: $madLib.verb)
             NavigationLink("Adjective View") {
-                AdjectiveView(madLib)
+                AdjectiveView(object: $madLib)
             }
         }
     }

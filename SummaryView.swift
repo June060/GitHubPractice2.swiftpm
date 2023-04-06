@@ -1,9 +1,10 @@
 import SwiftUI
 
 struct SummaryView: View {
+    @Binding var object:Madlib
     var body: some View {
         VStack{
-            Text("The fox looks at the beautiful grapes")
+            Text("The \(object.noun) \(object.verb) at the \(object.adjective) grapes")
         }
     }
 }
