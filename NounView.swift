@@ -12,7 +12,9 @@ struct NounView: View {
     @State var madLib: Madlib
     var body: some View {
         NavigationView {
-            TextField("Hello", text: $madLib.noun)
+            TextField("Enter a noun", text: $madLib.noun)
+                .padding()
+                .textFieldStyle(.roundedBorder)
             NavigationLink("Go to Verb View", destination: VerbView(madLib: $madLib))
         }
     }

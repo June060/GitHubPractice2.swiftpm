@@ -5,6 +5,8 @@ struct VerbView: View {
     var body: some View {
         NavigationView {
             TextField("Enter a verb", text: $madLib.verb)
+                .padding()
+                .textFieldStyle(.roundedBorder)
             NavigationLink("Adjective View") {
                 AdjectiveView(object: $madLib)
             }
